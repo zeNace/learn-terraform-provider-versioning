@@ -1,3 +1,12 @@
+terraform{
+  cloud {
+    organization = "zenace-training"
+    workspaces{
+      name = "learn-terraform-provider-versioning"
+    }
+  }
+}
+
 provider "aws" {
   region = "us-west-2"
 }
